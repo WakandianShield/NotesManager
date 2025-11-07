@@ -1,4 +1,6 @@
+@"
 appsettings.json
 bin/
 obj/
 .vs/
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
