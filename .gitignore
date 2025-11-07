@@ -1,24 +1,6 @@
-﻿## Ignorar archivos de Visual Studio
+﻿@"
+appsettings.json
+bin/
+obj/
 .vs/
-[Bb]in/
-[Oo]bj/
-*.user
-*.suo
-*.aps
-*.cache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.tmp
-*.tlog
-*.[Cc]ache
-*.ncb
-
-## Ignorar archivos de compilación
-*.exe
-*.dll
-*.pdb
-
-## MongoDB (si usas local)
-data/
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
