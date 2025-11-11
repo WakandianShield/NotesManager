@@ -65,98 +65,46 @@ git clone https://github.com/WakandianShield/GestorNotas_MongoDB.git
 cd GestorNotas_MongoDB
 ```
 
-### 2️- Configurar MongoDB
+### 2- Configurar MongoDB
 
-Elige una de las dos opciones:
 
-#### 3- **Opción A: MongoDB Local** (Recomendado para desarrollo)
+#### ☁️ (Gratis, en la nube)
 
-1. Descarga e instala [MongoDB Community Server](https://www.mongodb.com/try/download/community)
-
-2. Inicia el servicio:
-
-**Windows:**
-```powershell
-# Crear directorio de datos (primera vez)
-mkdir C:\data\db
-
-# Iniciar MongoDB
-mongod --dbpath "C:\data\db"
-```
-
-**Linux/Mac:**
-```bash
-# Iniciar servicio
-sudo systemctl start mongod
-
-# Verificar estado
-sudo systemctl status mongod
-```
-
-#### ☁️ **Opción B: MongoDB Atlas** (Gratis, en la nube)
-
-1. Crea una cuenta gratuita en [MongoDB Atlas](https://www.mongodb.com/atlas)
+1. Crea una cuenta gratuita en https://cloud.mongodb.com/
 2. Crea un nuevo cluster (selecciona el tier gratuito M0)
 3. Crea un usuario de base de datos:
    - Ve a "Database Access"
    - Click "Add New Database User"
    - Guarda usuario y contraseña
-4. Configura Network Access:
-   - Ve a "Network Access"
-   - Click "Add IP Address"
-   - Selecciona "Allow Access from Anywhere" (0.0.0.0/0)
+4. Conectar a C#:
+   - Ve a "Database"
+   - Ve a "Clusters"
+   - Ahí aparecera tu base de datos
+     
 5. Obtén tu cadena de conexión:
-   - Ve a "Database" → "Connect"
-   - Selecciona "Connect your application"
-   - Copia la cadena de conexión
+   - Selecciona "Connect"
+   - Selecciona "MongoDB for VS code"
+   - Copia la connection string que se te asigne
+   - Cambia el usuario y la contraseña por la que creaste
+   - pega el link de la conexión en el json en esta sección
+   "ConnectionString": "AQUI PON TU STRING CONNECTION",
 
 ### 3️- Configurar la Aplicación
 
-#### Crear Archivo de Configuración
+#### Crear Archivo de JSON en ejectuble
 
-```bash
-# En Windows (PowerShell)
-Copy-Item appsettings.json appsettings.Development.json
+1. Abre la carpeta en donde aparecen los paquetes de nuget y el .exe del form
+2. Agrega ahí un archivo nombrado como "appsettings.json" 
+3. Escribe en el archivo el json que esta a continuación pero reemplazando la ConnectionString por la tuya 
 
-# En Linux/Mac
-cp appsettings.json appsettings.Development.json
-```
-
-#### Editar Configuración
-
-Abre `appsettings.Development.json` y configura tu cadena de conexión:
-
-**Para MongoDB Local:**
+**Para MongoDB:**
 ```json
 {
-  "ConnectionStrings": {
-    "MongoDB": "mongodb://localhost:27017"
-  },
+ "MongoDB": {
+  "ConnectionString": "mongodb+srv://tuusuario:tupassword@cluster0.xxxxx.mongodb.net/",
   "DatabaseName": "GestorNotas",
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*"
-}
-```
-
-**Para MongoDB Atlas:**
-```json
-{
-  "ConnectionStrings": {
-    "MongoDB": "mongodb+srv://tuusuario:tupassword@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority"
-  },
-  "DatabaseName": "GestorNotas",
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*"
+  "CollectionName": "Notas"
+  }
 }
 ```
 
