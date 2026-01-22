@@ -1,4 +1,4 @@
-# 📝 Gestor de Notas con MongoDB
+# Gestor de Notas con MongoDB
 
 Una aplicación web moderna y elegante para gestionar tus notas, construida con ASP.NET Core y MongoDB.
 
