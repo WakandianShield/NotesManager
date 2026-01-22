@@ -2,9 +2,9 @@
 
 Una aplicación web moderna y elegante para gestionar tus notas, construida con ASP.NET Core y MongoDB.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![.NET](https://img.shields.io/badge/.NET-6.0+-purple.svg)
-![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-green.svg)
+![.NET](https://img.shields.io/badge/.NET%208.0-512BD4?logo=dotnet&logoColor=white&style=plastic)
+![C#](https://img.shields.io/badge/C%23-512AD5?logo=csharp&logoColor=white&style=plastic)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=plastic)
 
 ## Características
 
