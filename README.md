@@ -14,14 +14,6 @@
   includes real-time search for instant filtering, and delivers fast, reliable performance through seamless MongoDB integration.
 </p>
 
-<h2 align="center">Screenshots</h2>
-
-<p align="center">
-  <img width="70%" src="https://github.com/user-attachments/assets/162eef35-d4e1-4c88-935a-006ad768a594" />
-  <br>
-  <i>Main interface showing the list of notes with search and filters</i>
-</p>
-
 <h2 align="center">Requirements</h2>
 
 <h3 align="center">Make sure you have installed</h3>
@@ -118,7 +110,13 @@ cd GestorNotas_MongoDB
 <b>Important:</b> Replace the <b>"ConnectionString":</b> parameter in the JSON file with your real MongoDB Atlas credentials.
 </p>
 
+<h2 align="center">Screenshots</h2>
 
+<p align="center">
+  <img width="70%" src="https://github.com/user-attachments/assets/162eef35-d4e1-4c88-935a-006ad768a594" />
+  <br>
+  <i>Main interface showing the list of notes with search and filters</i>
+</p>
 
 <h2 align="center">Contact</h2>
 
