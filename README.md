@@ -112,8 +112,6 @@ cd GestorNotas_MongoDB
 
 <h2 align="center">Screenshots</h2>
 
-<h3 align="center">Main View</h3>
-
 <p align="center">
   <img width="70%" src="https://github.com/user-attachments/assets/162eef35-d4e1-4c88-935a-006ad768a594" />
   <br>
