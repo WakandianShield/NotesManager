@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-512BD4?logo=dotnet&logoColor=white&style=plastic" />
-  <img src="https://img.shields.io/badge/Windows_Forms-0078D6?logo=windows&logoColor=white&style=plastic" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=plastic" />
 </p>
 
