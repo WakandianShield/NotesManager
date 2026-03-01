@@ -15,7 +15,7 @@ Built with Windows Forms and MongoDB.
 <h2 align="center">Features</h2>
 
 <div align="center">
-  <ul style="display: inline-block; text-align: left;">
+  <ul style="display: inline-block; text-align: left; padding-left: 0; margin-left: 0; list-style-position: inside;">
     <li><b>Full CRUD</b> – Create, read, update and delete notes</li>
     <li><b>Modern Interface</b> – Clean and user-friendly design</li>
     <li><b>Real-Time Search</b> – Instant filtering</li>
